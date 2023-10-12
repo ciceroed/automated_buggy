@@ -4,7 +4,7 @@
     "design_settings": {
       "defaults": {
         "board_outline_line_width": 0.15,
-        "copper_line_width": 0.15,
+        "copper_line_width": 0.19999999999999998,
         "copper_text_italic": false,
         "copper_text_size_h": 1.5,
         "copper_text_size_v": 1.5,
@@ -34,9 +34,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.016,
-          "height": 2.032,
-          "width": 1.7272
+          "drill": 1.0,
+          "height": 1.7,
+          "width": 1.7
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -45,7 +45,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.508
+          "min_clearance": 0.30479999999999996
         }
       },
       "diff_pair_dimensions": [],
@@ -108,7 +108,7 @@
         "max_error": 0.005,
         "min_clearance": 0.0,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.075,
+        "min_copper_edge_clearance": 0.09999999999999999,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.19999999999999998,
@@ -118,7 +118,7 @@
         "min_text_height": 0.7999999999999999,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.19999999999999998,
+        "min_track_width": 0.4826,
         "min_via_annular_width": 0.09999999999999999,
         "min_via_diameter": 0.39999999999999997,
         "solder_mask_to_copper_clearance": 0.0,
@@ -391,7 +391,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "veiculo_uno.kicad_pro",
+    "filename": "Hardware.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -403,31 +403,14 @@
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
-        "microvia_diameter": 1.5,
-        "microvia_drill": 0.6,
+        "microvia_diameter": 1.2,
+        "microvia_drill": 0.8,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.508,
-        "via_diameter": 1.5,
-        "via_drill": 0.6,
-        "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.3048,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 1.5,
-        "microvia_drill": 0.6,
-        "name": "POWER",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 1.0,
-        "via_diameter": 1.5,
-        "via_drill": 0.6,
+        "via_diameter": 1.2,
+        "via_drill": 0.8,
         "wire_width": 6
       }
     ],
@@ -439,75 +422,11 @@
     "netclass_patterns": [
       {
         "netclass": "Default",
-        "pattern": "+3V3"
+        "pattern": "+5V"
       },
       {
         "netclass": "Default",
-        "pattern": "/AREF"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/IOREF"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/Reset"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/Vin"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "10"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "11"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "12"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "13"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "2"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "3"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "4"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "5"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "6"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "7"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "8"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "9"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "A0"
+        "pattern": "+BATT"
       },
       {
         "netclass": "Default",
@@ -516,18 +435,6 @@
       {
         "netclass": "Default",
         "pattern": "A2"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "A3"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "A4(SDA)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "A5(SCL)"
       },
       {
         "netclass": "Default",
@@ -547,11 +454,7 @@
       },
       {
         "netclass": "Default",
-        "pattern": "AMP1"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "AMP2"
+        "pattern": "BATMed"
       },
       {
         "netclass": "Default",
@@ -583,31 +486,175 @@
       },
       {
         "netclass": "Default",
-        "pattern": "Net-(J17-Pad2)"
+        "pattern": "Net-(D10-Pad2)"
       },
       {
         "netclass": "Default",
-        "pattern": "Net-(J18-Pad2)"
+        "pattern": "Net-(D11-Pad1)"
       },
       {
         "netclass": "Default",
-        "pattern": "Net-(J7-Pad9)"
+        "pattern": "Net-(D12-Pad2)"
       },
       {
         "netclass": "Default",
-        "pattern": "Net-(P1-Pad1)"
+        "pattern": "Net-(D2-Pad1)"
       },
       {
         "netclass": "Default",
-        "pattern": "Net-(P6-Pad1)"
+        "pattern": "Net-(D5-Pad1)"
       },
       {
         "netclass": "Default",
-        "pattern": "Net-(P7-Pad1)"
+        "pattern": "Net-(D6-Pad1)"
       },
       {
         "netclass": "Default",
-        "pattern": "Net-(P8-Pad1)"
+        "pattern": "Net-(D9-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(J12-Pad10)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(J12-Pad18)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(J8-Pad3)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(J9-Pad3)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(Q1-Pad3)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(Q10-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(Q10-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(Q10-Pad3)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(Q11-Pad3)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(Q12-Pad3)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(Q2-Pad3)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(Q3-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(Q3-Pad3)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(Q4-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(Q4-Pad3)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(Q5-Pad3)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(Q6-Pad3)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(Q7-Pad3)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(Q9-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(Q9-Pad3)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R10-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R11-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R13-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R14-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R17-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R18-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R21-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R22-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R25-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R26-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R27-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R28-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(RV1-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(RV2-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U4-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U4-Pad6)"
       },
       {
         "netclass": "Default",
@@ -635,10 +682,6 @@
       },
       {
         "netclass": "Default",
-        "pattern": "Rx"
-      },
-      {
-        "netclass": "Default",
         "pattern": "TXB"
       },
       {
@@ -648,18 +691,6 @@
       {
         "netclass": "Default",
         "pattern": "Trig1"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Tx"
-      },
-      {
-        "netclass": "POWER",
-        "pattern": "+5V"
-      },
-      {
-        "netclass": "POWER",
-        "pattern": "+5VP"
       }
     ]
   },
@@ -680,7 +711,7 @@
       "dashed_lines_dash_length_ratio": 12.0,
       "dashed_lines_gap_length_ratio": 3.0,
       "default_line_thickness": 6.0,
-      "default_text_size": 50.0,
+      "default_text_size": 79.0,
       "field_names": [],
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
@@ -698,15 +729,6 @@
       "version": 1
     },
     "net_format_name": "",
-    "ngspice": {
-      "fix_include_paths": true,
-      "fix_passive_vals": false,
-      "meta": {
-        "version": 0
-      },
-      "model_mode": 0,
-      "workbook_filename": ""
-    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "spice_adjust_passive_values": false,
@@ -718,11 +740,6 @@
     "subpart_first_id": 65,
     "subpart_id_separator": 0
   },
-  "sheets": [
-    [
-      "8da933a9-35f8-42e6-8504-d1bab7264306",
-      ""
-    ]
-  ],
+  "sheets": [],
   "text_variables": {}
 }

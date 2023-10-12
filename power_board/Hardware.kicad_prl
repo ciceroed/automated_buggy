@@ -14,13 +14,12 @@
       "vias": 1.0,
       "zones": 0.6
     },
-    "ratsnest_display_mode": 0,
     "selection_filter": {
       "dimensions": true,
       "footprints": true,
       "graphics": true,
       "keepouts": true,
-      "lockedItems": true,
+      "lockedItems": false,
       "otherItems": true,
       "pads": true,
       "text": true,
@@ -72,7 +71,7 @@
     "zone_display_mode": 0
   },
   "meta": {
-    "filename": "veiculo_uno.kicad_prl",
+    "filename": "Hardware.kicad_prl",
     "version": 3
   },
   "project": {

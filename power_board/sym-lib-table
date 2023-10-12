@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name Hardware-rescue)(type Legacy)(uri ${KIPRJMOD}/Hardware-rescue.lib)(options "")(descr ""))
+  (version 7)
+  (lib (name "Hardware-rescue")(type "KiCad")(uri "${KIPRJMOD}/Hardware-rescue.kicad_sym")(options "")(descr ""))
 )
