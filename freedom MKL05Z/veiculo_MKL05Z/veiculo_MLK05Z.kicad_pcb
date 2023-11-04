@@ -3664,7 +3664,7 @@
   (gr_text "GND" (at 151.5872 116.205 90) (layer "F.SilkS") (tstamp 00000000-0000-0000-0000-00005f931798)
     (effects (font (size 1 1) (thickness 0.25)))
   )
-  (gr_text "Shield MKL05Z \nEquipe RoboRoadsters\n\nAdapatado de:\nShield Arduino Uno\nProf. Renan Augusto Starke" (at 150 101.75) (layer "F.SilkS") (tstamp 00000000-0000-0000-0000-000060414544)
+  (gr_text "Shield MKL05Z \nEquipe RoboRoadsters\n\nAdaptado de:\nShield Arduino Uno\nProf. Renan Augusto Starke" (at 150 101.75) (layer "F.SilkS") (tstamp 00000000-0000-0000-0000-000060414544)
     (effects (font (size 1 1) (thickness 0.1)))
   )
   (gr_text "TRIG1" (at 165.1508 85.471 90) (layer "F.SilkS") (tstamp 0e1b249f-0069-4dcc-9f1d-5ce00e3b9458)
